@@ -52,7 +52,7 @@
 
 开屏界面使用建项目时自带的LaunchScreen.storyboard文件进行设计，背景图片使用星空山河图，在界面上添加了3个Label分别用来显示:欢迎标语，账号信息和密码信息。设计界面如下：
 
-![img](https://i.loli.net/2021/06/29/6RjO4zc8q2htJyA.jpg)
+<img src="https://i.loli.net/2021/06/29/dOJTi5RIYgsGmp8.jpg" alt="img" style="zoom:25% ;" width = "30%" />
 
  
 
