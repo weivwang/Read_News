@@ -1,7 +1,3 @@
-# Read_News
-武汉大学移动编程技术（swift）期末作业
-
-
 ***\*【实验目的】\*******\*：\**** 
 
  设计一个新闻阅读APP，实现的主要功能有：
@@ -52,13 +48,13 @@
 
 开屏界面使用建项目时自带的LaunchScreen.storyboard文件进行设计，背景图片使用星空山河图，在界面上添加了3个Label分别用来显示:欢迎标语，账号信息和密码信息。设计界面如下：
 
-<img src="https://i.loli.net/2021/06/29/dOJTi5RIYgsGmp8.jpg" alt="img" style="zoom:25% ;" width = "30%" />
+<img src="https://i.loli.net/2021/06/29/6RjO4zc8q2htJyA.jpg" alt="img" style="zoom:25%;" width = "50%"/>
 
  
 
 运行界面如下：
 
-![img](https://i.loli.net/2021/06/29/MaCyoW4GTkI8DUm.jpg)
+<img src="https://i.loli.net/2021/06/29/MaCyoW4GTkI8DUm.jpg" alt="img" style="zoom:25%;" width = 30% />
 
  
 
@@ -70,7 +66,7 @@
 
  
 
-<img src="https://i.loli.net/2021/06/29/MVr48mKIZjTH3BX.jpg" alt="img" style="zoom: 25%;" />
+<img src="https://i.loli.net/2021/06/29/MVr48mKIZjTH3BX.jpg" alt="img" style="zoom: 25%;" width = 30%/>
 
  
 
@@ -126,7 +122,7 @@ Main.storyboard设计方案：
 
 若登录失败，则弹出UIAlertController来提示用户用户名或密码错误，效果如下： 
 
-<img src="https://i.loli.net/2021/06/29/q6j1EgxJz54C3QR.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/q6j1EgxJz54C3QR.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
  
 
@@ -144,13 +140,13 @@ Main.storyboard设计方案：
 
  
 
-![img](https://i.loli.net/2021/06/29/f9eKv5Uh4zBVS1I.jpg)
+<img src="https://i.loli.net/2021/06/29/f9eKv5Uh4zBVS1I.jpg" alt="img" style="zoom:25%;" width = 60%/>
 
  
 
 3.1 新闻界面
 
-<img src="https://i.loli.net/2021/06/29/arx2n45LXteBfFh.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/arx2n45LXteBfFh.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
  
 
@@ -316,7 +312,7 @@ guard let path = news?.path else {return}
 
  
 
-<img src="https://i.loli.net/2021/06/29/xHdeEh4y1nQXjiY.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/xHdeEh4y1nQXjiY.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
  
 
@@ -324,7 +320,7 @@ guard let path = news?.path else {return}
 
  
 
-<img src="https://i.loli.net/2021/06/29/OVT4WoAcp17exhX.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/OVT4WoAcp17exhX.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
  
 
@@ -513,7 +509,7 @@ deleteNews(title:String)：用于取消收藏时，将新闻从数据库中删�
 
  
 
-<img src="https://i.loli.net/2021/06/29/nLPi8IpNq3eCZMK.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/nLPi8IpNq3eCZMK.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
 这里收藏界面存在bug，是图片无法显示。Debug发现是查询数据库的image结果为空，但将queryresult输出发现image字段不为空，可能是在解包或赋值image变为空了，但碍于时间原因，且该效果不影响实际使用，所以没有进一步解决。
 
@@ -611,7 +607,7 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 
 根据标题搜索功能：
 
-<img src="https://i.loli.net/2021/06/29/fbFJN3qcES69V5x.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/fbFJN3qcES69V5x.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
 实现代码如下：
 
@@ -680,17 +676,17 @@ func initSearch() {
 
 点击收藏界面的新闻cell，同样可以进入对应的新闻界面：
 
-<img src="https://i.loli.net/2021/06/29/mM3n6KchSdaW4Pl.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/mM3n6KchSdaW4Pl.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
 该界面，我设置了取消收藏按钮，当点击取消按钮，会调用NewsDAL.deleteNews(title:String)方法，将该新闻从数据库中删除。并会弹出提示框，提示用户删除成功。显示效果如下：
 
-<img src="https://i.loli.net/2021/06/29/rTX2Pbcu5Z8LpDB.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/rTX2Pbcu5Z8LpDB.jpg" alt="img" style="zoom:25%;" width = 30%/>
 
  
 
 返回收藏界面刷新后，该条新闻被删除：
 
-<img src="https://i.loli.net/2021/06/29/dOJTi5RIYgsGmp8.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/dOJTi5RIYgsGmp8.jpg" alt="img" style="zoom:25% ;" width = "30%" />
 
  
 
@@ -698,4 +694,4 @@ func initSearch() {
 
 开发者界面主要是自己diy出来的，完整软件做下来感觉非常有成就感，所以设计了一个开发者界面，感觉很cool。
 
-<img src="https://i.loli.net/2021/06/29/fvdlqQjVLsExOG2.jpg" alt="img" style="zoom:25%;" />
+<img src="https://i.loli.net/2021/06/29/fvdlqQjVLsExOG2.jpg" alt="img" style="zoom:25%;" width = 30%/>
